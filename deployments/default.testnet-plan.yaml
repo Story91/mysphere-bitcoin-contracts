@@ -5,4 +5,14 @@ network: testnet
 stacks-node: "https://stacks-node-api.testnet.stacks.co"
 bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
 plan:
-  batches: []
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: bitcoin-post-contract
+            expected-sender: ST3Q4HTWC61932Z7491B8RFTCTHJ6F7X2KZMJJDJ3
+            cost: 60490
+            path: contracts/bitcoin-post-contract.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"
