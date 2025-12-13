@@ -10,7 +10,7 @@ plan:
       transactions:
         - contract-publish:
             contract-name: bitcoin-post-contract
-            expected-sender: ST3Q4HTWC61932Z7491B8RFTCTHJ6F7X2KZMJJDJ3
+            expected-sender: ST1AXWRTK56P742JKCPXFSQE4K4ADQSTDHERB6BGP
             cost: 60490
             path: contracts/bitcoin-post-contract.clar
             anchor-block-only: true
