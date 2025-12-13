@@ -1,0 +1,18 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://stacks-node-api.mainnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: bitcoin-post-contract
+            expected-sender: SP2FTPC94TRKZX0S4D8DW1VBMNP2WNWZKYY5D1VN1
+            cost: 60490
+            path: contracts/bitcoin-post-contract.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"
